@@ -1,0 +1,34 @@
+{
+  "name": "restaurant-feedback-system",
+  "version": "1.0.0",
+  "description": "System for submitting restaurant feedback with text and images",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "start:function": "node dist/function/index.js",
+    "start:mcp": "node dist/mcp/index.js",
+    "dev:function": "ts-node-dev --respawn src/function/index.ts",
+    "dev:mcp": "ts-node-dev --respawn src/mcp/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "@modelcontextprotocol/sdk": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^20.5.7",
+    "@types/cors": "^2.8.13",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2",
+    "jest": "^29.6.4",
+    "@types/jest": "^29.5.4"
+  }
+} 

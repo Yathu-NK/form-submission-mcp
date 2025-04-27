@@ -1,0 +1,8 @@
+Project Overview:
+
+Objective: Develop an Function and a MPC server to submit feedback form for a restaurant. MPC & Function allow users to submit textual feedback and upload images.
+
+Backend: TypeScript (Node.js), MongoDB for data storage, and the Model Context Protocol (MCP) for integrating external systems. Have good folder strcture to seprate the Function thet submit the form and the MCP server codes
+
+
+Frontend: Not covered in this plan.

@@ -1,0 +1,40 @@
+# Restaurant Feedback System - Project Requirements
+
+## Overview
+A system that allows restaurant customers to submit feedback along with optional image uploads. The system is built with TypeScript, Node.js, MongoDB and follows the Model Context Protocol (MCP) for external system integration.
+
+## Functional Requirements
+
+### Function Server
+1. Accept feedback submissions with text fields (customer name, email, rating, comments)
+2. Support image uploads (up to 5 images per submission)
+3. Store submissions in MongoDB
+4. Validate input data (required fields, email format, etc.)
+5. Return appropriate success/error responses
+
+### MCP Server
+1. Expose APIs following the Model Context Protocol spec
+2. Support the same functionality as the Function server
+3. Accept base64-encoded images instead of file uploads
+4. Implement API key authentication
+5. Provide schema endpoint for MCP clients
+
+## Technical Requirements
+
+### Backend
+- TypeScript and Node.js
+- MongoDB for data storage
+- Express.js for REST APIs
+- Multer for file uploads handling
+- Proper error handling and validation
+
+### Code Organization
+- Separate folder structure for Function and MCP code
+- Shared models and utilities between both components
+- Clear type definitions and interfaces
+- Proper configuration management
+
+### Security
+- API key validation for MCP endpoints
+- Input validation and sanitization
+- Image file type and size restrictions 
