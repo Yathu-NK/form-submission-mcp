@@ -12,7 +12,6 @@ A system that allows users to submit textual feedback and upload images for rest
 ## Features
 
 - Text feedback submission
-- Image upload capability
 - MongoDB for data storage
 - MCP integration for external system communication
 
